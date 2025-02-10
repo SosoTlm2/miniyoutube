@@ -12,6 +12,13 @@ body {
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode - Initially Hidden */
+body.dark {
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
 }
 
 /* Header Styling */
@@ -26,13 +33,31 @@ header {
     width: 100%;
     top: 0;
     z-index: 100;
+    transition: background-color 0.3s;
 }
 
-/* Logo in Header */
-header .logo h1 {
-    font-size: 28px;
-    color: #ff0000; /* Use YouTube-like red for branding */
-    font-weight: bold;
+header.dark {
+    background-color: #1F1F1F; /* Dark background in header for dark mode */
+}
+
+/* Theme Toggle - Sun & Moon Icons */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#moon {
+    display: none;
+}
+
+body.dark #sun {
+    display: none;
+}
+
+body.dark #moon {
+    display: inline;
 }
 
 /* Search Bar */
@@ -46,7 +71,11 @@ header .search-bar input {
     transition: border-color 0.3s;
 }
 
-/* Search Bar Focus */
+body.dark header .search-bar input {
+    background-color: #2C2C2C;
+    border: 1px solid #444444;
+}
+
 header .search-bar input:focus {
     border-color: #ff0000; /* Red highlight on focus */
     outline: none;
@@ -86,6 +115,7 @@ header .user button:hover {
     padding-top: 100px; /* Ensure there's enough space below the fixed header */
 }
 
+/* Video Item */
 .video-item {
     width: 220px;
     margin: 15px;
@@ -94,6 +124,14 @@ header .user button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark .video-item {
+    background-color: #1A1A1A; /* Dark background for video items */
+}
+
+body.dark .video-item:hover {
+    background-color: #333333; /* Darken the background slightly on hover */
 }
 
 /* Hover Effects on Video Item */
@@ -114,6 +152,10 @@ header .user button:hover {
     padding: 10px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
+}
+
+body.dark .video-item h3 {
+    color: #E0E0E0;
 }
 
 /* Responsive Layout for Smaller Screens */
