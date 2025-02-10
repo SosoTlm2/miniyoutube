@@ -1,0 +1,80 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Barre de navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header .search-bar input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+header .user button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header .user button:hover {
+    background-color: #cc0000;
+}
+
+/* Player vidéo */
+.video-player {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Liste de vidéos */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.video-item {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
