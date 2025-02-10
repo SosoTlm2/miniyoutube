@@ -1,69 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini YouTube</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home/styles.css">
 </head>
 <body>
-
-<style>
-    /* Reset styles */
-/* Body and background */
-body {
-    background-color: #121212; /* Dark background */
-    color: #E0E0E0; /* Light gray text */
-}
-
-/* Header */
-header {
-    background-color: #1F1F1F; /* Dark gray header background */
-}
-
-/* Search bar */
-header .search-bar input {
-    background-color: #2C2C2C; /* Dark search bar */
-    border: 1px solid #444444; /* Dark border for the search bar */
-    color: #E0E0E0; /* Light text inside the search bar */
-}
-
-header .search-bar input:focus {
-    border-color: #FF5722; /* Bright focus border */
-}
-
-/* User button */
-header .user button {
-    background-color: #FF5722; /* Button color */
-    color: #fff;
-}
-
-header .user button:hover {
-    background-color: #FF3D00; /* Button hover */
-}
-
-/* Video items */
-.video-item {
-    background-color: #1A1A1A; /* Dark background for video items */
-    border: 1px solid #333333; /* Subtle border around video items */
-}
-
-.video-item:hover {
-    background-color: #333333; /* Darken the background slightly on hover */
-}
-
-/* Video title */
-.video-item h3 {
-    color: #E0E0E0; /* Light text for titles */
-}
-
-/* Video thumbnails */
-.video-item img {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for video thumbnails */
-}
-
-
-</style>
 
 <header>
     <div class="logo">
@@ -75,30 +18,21 @@ header .user button:hover {
     <div class="user">
         <button>Sign In</button>
     </div>
+    <div class="theme-toggle">
+        <span id="sun">&#9728;</span> <!-- Sun Icon -->
+        <span id="moon">&#127769;</span> <!-- Moon Icon -->
+    </div>
 </header>
 
-<div class="video-player">
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-
+<!-- Your content goes here -->
 <div class="video-list">
     <div class="video-item">
         <img src="thumbnail1.jpg" alt="Video 1">
         <h3>Video Title 1</h3>
     </div>
-    <div class="video-item">
-        <img src="thumbnail2.jpg" alt="Video 2">
-        <h3>Video Title 2</h3>
-    </div>
-    <div class="video-item">
-        <img src="thumbnail3.jpg" alt="Video 3">
-        <h3>Video Title 3</h3>
-    </div>
     <!-- Add more video items as needed -->
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
