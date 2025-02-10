@@ -10,148 +10,58 @@
 
 <style>
     /* Reset styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
+/* Body and background */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: black; /* Lighter background for modern feel */
-    color: #333;
-    line-height: 1.6;
-    min-height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light gray text */
 }
 
-/* Header Styling */
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 15px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
+    background-color: #1F1F1F; /* Dark gray header background */
 }
 
-/* Logo in Header */
-header .logo h1 {
-    font-size: 28px;
-    color: #ff0000; /* Use YouTube-like red for branding */
-    font-weight: bold;
-}
-
-/* Search Bar */
+/* Search bar */
 header .search-bar input {
-    width: 350px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: #fafafa;
-    transition: border-color 0.3s;
+    background-color: #2C2C2C; /* Dark search bar */
+    border: 1px solid #444444; /* Dark border for the search bar */
+    color: #E0E0E0; /* Light text inside the search bar */
 }
 
-/* Search Bar Focus */
 header .search-bar input:focus {
-    border-color: #ff0000; /* Red highlight on focus */
-    outline: none;
+    border-color: #FF5722; /* Bright focus border */
 }
 
-/* User Button */
+/* User button */
 header .user button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff0000;
+    background-color: #FF5722; /* Button color */
     color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
 }
 
-/* User Button Hover */
 header .user button:hover {
-    background-color: #cc0000; /* Darker red when hovered */
+    background-color: #FF3D00; /* Button hover */
 }
 
-/* Video Player */
-.video-player {
-    margin-top: 80px; /* Push below the header */
-    max-width: 100%;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Video List */
-.video-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-    padding-top: 100px; /* Ensure there's enough space below the fixed header */
-}
-
+/* Video items */
 .video-item {
-    width: 220px;
-    margin: 15px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #1A1A1A; /* Dark background for video items */
+    border: 1px solid #333333; /* Subtle border around video items */
 }
 
-/* Hover Effects on Video Item */
 .video-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #333333; /* Darken the background slightly on hover */
 }
 
-.video-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
+/* Video title */
 .video-item h3 {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    padding: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+    color: #E0E0E0; /* Light text for titles */
 }
 
-/* Responsive Layout for Smaller Screens */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    header .logo h1 {
-        font-size: 24px;
-    }
-
-    header .search-bar input {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .video-list {
-        justify-content: center;
-    }
-
-    .video-item {
-        width: 180px;
-    }
+/* Video thumbnails */
+.video-item img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for video thumbnails */
 }
+
 
 </style>
 
